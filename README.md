@@ -2,12 +2,7 @@
 
 This repository bundles everything you need to build, install, and exercise a
 virtual Core Audio device that routes multiple audio sources into a stereo
-loopback that Zoom (or any Core Audio client) can see. The workspace contains:
-
-- `device_kit/` – the Rust mixer core, CLI tools, and Node/Electron bindings.
-- `SwiftUI/` – the SwiftUI control-panel sources that let you monitor levels and
-  tweak gain/mute state.
-- `AudioServerPlugInTests/` – Xcode XCTest stubs that talk to the exported C FFI.
+loopback that Zoom (or any Core Audio client) can see.
 
 The instructions below walk a non-specialist through prerequisites, driver
 installation, and basic testing.
