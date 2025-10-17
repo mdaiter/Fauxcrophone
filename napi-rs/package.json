@@ -1,0 +1,22 @@
+{
+  "name": "@device-kit/loopback",
+  "version": "0.1.0",
+  "description": "Node bindings for the DeviceKit loopback mixer",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "napi build --release",
+    "build:debug": "napi build",
+    "test": "node examples/node_feed.js"
+  },
+  "napi": {
+    "name": "loopback",
+    "targets": ["x86_64-apple-darwin", "aarch64-apple-darwin"]
+  },
+  "dependencies": {
+    "@napi-rs/cli": "^2.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

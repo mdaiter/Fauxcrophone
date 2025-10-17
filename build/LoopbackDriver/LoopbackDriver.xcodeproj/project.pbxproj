@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0859B6A4661EAC4FFEAD0B22 /* HostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AC7FD3FF5B162736A832D /* HostApp.swift */; };
+		291B0A9AB85096B2B0989C93 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577B895862E65C2DB6C6D4D /* DeviceView.swift */; };
+		3AECDB3F9F0136758B201383 /* LoopbackControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D0CBAA24E55771F308736 /* LoopbackControlApp.swift */; };
+		9466CB0FC1EDE07321787C40 /* libdevice_kit.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6FA460C059071558E841B9 /* libdevice_kit.dylib */; };
+		AED134397BF1296A5D561061 /* LoopbackDriverExtension.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 33632F860ED2B276C29C0C3B /* LoopbackDriverExtension.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6CDA848E1B53350CBDD49EB /* MeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29225CFB46321DF02A1277F6 /* MeterView.swift */; };
+		D145C0722E6EEB78F11B2489 /* LoopbackDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002AEDC7495F78BC569597EF /* LoopbackDevice.swift */; };
+		E776822BC7412C9595BDCFAD /* LoopbackBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E30B2695C799F8279EE9006 /* LoopbackBridge.swift */; };
+		F36A47DD1AC41AE0F9C7668B /* LoopbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B66F5FE25DDD5E3D82C1B22 /* LoopbackViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9601F2E5E38F93C2C142F09D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49AB4A0DF339CEF1C9F34058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204FC74D80D7E6A7C2D9FC19;
+			remoteInfo = LoopbackDriverExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		658BBEC4297DC2CDF9F1B9A9 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				AED134397BF1296A5D561061 /* LoopbackDriverExtension.dext in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002AEDC7495F78BC569597EF /* LoopbackDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackDevice.swift; sourceTree = "<group>"; };
+		07BFC573BC59BA4BF7D2D7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29225CFB46321DF02A1277F6 /* MeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterView.swift; sourceTree = "<group>"; };
+		33632F860ED2B276C29C0C3B /* LoopbackDriverExtension.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = LoopbackDriverExtension.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1D0CBAA24E55771F308736 /* LoopbackControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackControlApp.swift; sourceTree = "<group>"; };
+		6B66F5FE25DDD5E3D82C1B22 /* LoopbackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackViewModel.swift; sourceTree = "<group>"; };
+		6E6FA460C059071558E841B9 /* libdevice_kit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libdevice_kit.dylib; sourceTree = "<group>"; };
+		75083FF1BA5D93064C12A823 /* LoopbackDriverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopbackDriverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1C2CE717FC9109D9D6B2D3 /* LoopbackDriverExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoopbackDriverExtension.entitlements; sourceTree = "<group>"; };
+		9E30B2695C799F8279EE9006 /* LoopbackBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackBridge.swift; sourceTree = "<group>"; };
+		A42404E0CB40F9416778CFF5 /* LoopbackBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopbackBridge.h; sourceTree = "<group>"; };
+		A577B895862E65C2DB6C6D4D /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		CDB0C68B6F6504C59D921178 /* LoopbackDriverApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoopbackDriverApp.entitlements; sourceTree = "<group>"; };
+		DB6C44C2D04A895FCB6CA0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E16AC7FD3FF5B162736A832D /* HostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		56025E60F0DF2659575BAB59 = {
+			isa = PBXGroup;
+			children = (
+				8BFB520D51F910DC3865BC54 /* DriverExtension */,
+				A8C2778800CDBF2343936B51 /* HostApp */,
+				79E1142C8DA368BD87FB875B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E1142C8DA368BD87FB875B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75083FF1BA5D93064C12A823 /* LoopbackDriverApp.app */,
+				33632F860ED2B276C29C0C3B /* LoopbackDriverExtension.dext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86229830E4AFB7331AC0464C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E6FA460C059071558E841B9 /* libdevice_kit.dylib */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BFB520D51F910DC3865BC54 /* DriverExtension */ = {
+			isa = PBXGroup;
+			children = (
+				07BFC573BC59BA4BF7D2D7B7 /* Info.plist */,
+				A42404E0CB40F9416778CFF5 /* LoopbackBridge.h */,
+				7B1C2CE717FC9109D9D6B2D3 /* LoopbackDriverExtension.entitlements */,
+				86229830E4AFB7331AC0464C /* Frameworks */,
+				CC6B7C49606A179FC6367F60 /* Sources */,
+			);
+			path = DriverExtension;
+			sourceTree = "<group>";
+		};
+		A8C2778800CDBF2343936B51 /* HostApp */ = {
+			isa = PBXGroup;
+			children = (
+				E16AC7FD3FF5B162736A832D /* HostApp.swift */,
+				DB6C44C2D04A895FCB6CA0D6 /* Info.plist */,
+				3A1D0CBAA24E55771F308736 /* LoopbackControlApp.swift */,
+				CDB0C68B6F6504C59D921178 /* LoopbackDriverApp.entitlements */,
+			);
+			path = HostApp;
+			sourceTree = "<group>";
+		};
+		CC6B7C49606A179FC6367F60 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A577B895862E65C2DB6C6D4D /* DeviceView.swift */,
+				9E30B2695C799F8279EE9006 /* LoopbackBridge.swift */,
+				002AEDC7495F78BC569597EF /* LoopbackDevice.swift */,
+				6B66F5FE25DDD5E3D82C1B22 /* LoopbackViewModel.swift */,
+				29225CFB46321DF02A1277F6 /* MeterView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204FC74D80D7E6A7C2D9FC19 /* LoopbackDriverExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5706E7666014204F4DD07B2 /* Build configuration list for PBXNativeTarget "LoopbackDriverExtension" */;
+			buildPhases = (
+				4BEB9689F5857474B25572E3 /* Sources */,
+				291EB303B0B6F4A294CFC67F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoopbackDriverExtension;
+			packageProductDependencies = (
+			);
+			productName = LoopbackDriverExtension;
+			productReference = 33632F860ED2B276C29C0C3B /* LoopbackDriverExtension.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+		52F1EFE0AC5CFCB1A2B5ADD6 /* LoopbackDriverApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E75397231954749AD3FAEF57 /* Build configuration list for PBXNativeTarget "LoopbackDriverApp" */;
+			buildPhases = (
+				5043457DB3B899011C93B0A1 /* Sources */,
+				658BBEC4297DC2CDF9F1B9A9 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B1924526BE4130C1EC4043 /* PBXTargetDependency */,
+			);
+			name = LoopbackDriverApp;
+			packageProductDependencies = (
+			);
+			productName = LoopbackDriverApp;
+			productReference = 75083FF1BA5D93064C12A823 /* LoopbackDriverApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49AB4A0DF339CEF1C9F34058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					52F1EFE0AC5CFCB1A2B5ADD6 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1F09C9FE51AEBBB74911221 /* Build configuration list for PBXProject "LoopbackDriver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 56025E60F0DF2659575BAB59;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F1EFE0AC5CFCB1A2B5ADD6 /* LoopbackDriverApp */,
+				204FC74D80D7E6A7C2D9FC19 /* LoopbackDriverExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		291EB303B0B6F4A294CFC67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9466CB0FC1EDE07321787C40 /* libdevice_kit.dylib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BEB9689F5857474B25572E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291B0A9AB85096B2B0989C93 /* DeviceView.swift in Sources */,
+				E776822BC7412C9595BDCFAD /* LoopbackBridge.swift in Sources */,
+				D145C0722E6EEB78F11B2489 /* LoopbackDevice.swift in Sources */,
+				F36A47DD1AC41AE0F9C7668B /* LoopbackViewModel.swift in Sources */,
+				C6CDA848E1B53350CBDD49EB /* MeterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5043457DB3B899011C93B0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0859B6A4661EAC4FFEAD0B22 /* HostApp.swift in Sources */,
+				3AECDB3F9F0136758B201383 /* LoopbackControlApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B1924526BE4130C1EC4043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204FC74D80D7E6A7C2D9FC19 /* LoopbackDriverExtension */;
+			targetProxy = 9601F2E5E38F93C2C142F09D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7464FC6D7D952B3DB66E36E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7F2DFB54C72FEFB49003B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DriverExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/DriverExtension/Frameworks";
+				OTHER_LDFLAGS = "-ldevice_kit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.loopbackdriver.extension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = DriverExtension/LoopbackBridge.h;
+			};
+			name = Debug;
+		};
+		D4B5302A762ACED788DD84AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.loopbackdriver.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D706C5C7C4413D1940137671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DriverExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/DriverExtension/Frameworks";
+				OTHER_LDFLAGS = "-ldevice_kit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.loopbackdriver.extension;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = DriverExtension/LoopbackBridge.h;
+			};
+			name = Release;
+		};
+		E07E3C36DD3095CB937D857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HostApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.loopbackdriver.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0CEDF94C1058F1CECD08A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1F09C9FE51AEBBB74911221 /* Build configuration list for PBXProject "LoopbackDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7464FC6D7D952B3DB66E36E3 /* Debug */,
+				F0CEDF94C1058F1CECD08A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5706E7666014204F4DD07B2 /* Build configuration list for PBXNativeTarget "LoopbackDriverExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2DFB54C72FEFB49003B5BA /* Debug */,
+				D706C5C7C4413D1940137671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E75397231954749AD3FAEF57 /* Build configuration list for PBXNativeTarget "LoopbackDriverApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B5302A762ACED788DD84AD /* Debug */,
+				E07E3C36DD3095CB937D857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49AB4A0DF339CEF1C9F34058 /* Project object */;
+}

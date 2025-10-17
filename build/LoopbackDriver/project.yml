@@ -1,0 +1,38 @@
+name: LoopbackDriver
+options:
+  deploymentTarget: 14.0
+  xcodeVersion: 15.0
+  createIntermediateDirectories: true
+targets:
+  LoopbackDriverApp:
+    type: application
+    platform: macOS
+    sources:
+      - path: HostApp
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.loopbackdriver.app
+      INFOPLIST_FILE: HostApp/Info.plist
+      CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - target: LoopbackDriverExtension
+
+  LoopbackDriverExtension:
+    type: driver-extension
+    platform: macOS
+    productName: LoopbackDriverExtension
+    sources:
+      - path: DriverExtension
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.loopbackdriver.extension
+      INFOPLIST_FILE: DriverExtension/Info.plist
+      SWIFT_OBJC_BRIDGING_HEADER: DriverExtension/LoopbackBridge.h
+      OTHER_LDFLAGS: "-ldevice_kit"
+      LD_RUNPATH_SEARCH_PATHS: "$(PROJECT_DIR)/DriverExtension/Frameworks"
+    buildPhases:
+      - name: CopyRustDylib
+        type: shellScript
+        shellScript: |
+          set -e
+          mkdir -p "$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Frameworks"
+          cp "$PROJECT_DIR/DriverExtension/Frameworks/libdevice_kit.dylib" "$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Frameworks/libdevice_kit.dylib"
+        executionPosition: afterCompile
