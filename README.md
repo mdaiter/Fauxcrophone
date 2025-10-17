@@ -1,4 +1,4 @@
-# Loopback DriverKit Workspace
+# Fauxcrophone: Loopback Device for DriverKit
 
 This repository bundles everything you need to build, install, and exercise a
 virtual Core Audio device that routes multiple audio sources into a stereo
